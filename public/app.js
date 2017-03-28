@@ -1,4 +1,3 @@
-
 var createUL = function () {
   var catUL = document.createElement('ul');
   catUL.classList.add('cat');
@@ -21,6 +20,9 @@ var createIMG = function (imageUrl) {
   var listItem = document.createElement('li'), catIMG = document.createElement('img');
   catIMG.setAttribute("src", imageUrl);
   catIMG.setAttribute("width", 500);
+  //this also works.
+  //  catIMG.src = imageUrl;
+  // catIMG.width = 500;
   listItem.appendChild(catIMG);
   return listItem;
 };
@@ -31,7 +33,6 @@ var appendElements = function (cats, catUL, catLI, catFoodLi, imageUrl) {
   catUL.appendChild(imageUrl);
   cats.appendChild(catUL);
 };
-
 
 var addCat = function (name, food, imageUrl) {
   var catUL = createUL();
@@ -62,6 +63,7 @@ var catsArray = [{
   favouriteFood: "Whiskas Temptations",
   imageUrl: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"
 }];
+
 var app = function () {
   for (var cat of catsArray) {
     addCat(cat.name, cat.favouriteFood, cat.imageUrl);

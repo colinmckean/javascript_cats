@@ -6,6 +6,7 @@
 .red-quote{
   color: red;
 }
+
 body{
 font-family: 'Open Sans', sans-serif;
 color: pink;
@@ -13,6 +14,7 @@ font-weight: bold;
 margin: 0 auto;
 width: 50%;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
